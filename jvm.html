@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JITS - Jawan Institute of Technology and Science</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #e0f0ff; }
+        header, footer { background: #003366; color: white; padding: 80px 10px; }
+        section { padding: 20px; max-width: 800px; margin: auto; }
+        .alt-bg { background: #cce0ff; }
+        img { width: 80%; max-width: 600px; margin-top: 10px; border-radius: 10px; }
+    </style>
+ 
+<body>
+    <div>
+    <header>
+        <h1>JITS - jawan Institute of Technology and Science</h1>
+        <h3>Excellence in Technical Education</h3>
+    </header>
+    <section>
+        <h2>About JITS</h2>
+        <p>Established in Mylapra, HITS fosters innovation and excellence in engineering education
+            , empowering students for industry readiness.</p>
+        <img src="campus.jpg" alt="HITS Campus">
+    </section>
+    <section class="alt-bg">
+        <h2>Why Choose JITS?</h2>
+        <p>- Experienced faculty & industry mentors.<br>
+            - Advanced labs & infrastructure.<br>
+            - Strong placements & hands-on projects.<br>
+            - Merit scholarships & vibrant campus life.</p>
+    </section>
+    <section>
+        <h2>Engineering Streams</h2>
+        <p>- B.Tech in CSE, AI & ML, ECE, ME, CE</p>
+    </section>
+    <section class="alt-bg">
+        <h2>Fee Structure & Scholarships</h2>
+        <p>- Tuition: ₹90,000/yr | Hostel: ₹50,000/yr<br>- Merit-based scholarships & financial aid.</p>
+    </section>
+    <section>
+        <h2>Useful Links</h2>
+        <p><a href="https://www.aicte-india.org/" target="_blank">AICTE</a> 
+        | <a href="https://www.iiit.ac.in/" target="_blank">IIIT</a> 
+        | <a href="https://www.ugc.ac.in/" target="_blank">UGC</a> |
+         <a href="https://nptel.ac.in/" target="_blank">NPTEL</a> |
+          <a href="https://www.jeemain.nta.nic.in/" target="_blank">JEE Main</a></p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p>Mylapra, Kerala | Email: contact@hits.edu.in | Phone: +91 98765 43210<br>
+            <a href="https://hits.edu.in" target="_blank">Visit Our Website</a></p>
+    </section>
+    <script>
+        function validate(){
+        var name=document.forms["frm"]["name"].value; 
+        var contact=document.forms["frm"]["contact"].value;
+        var email=document.forms["frm"]["mail"].value;
+        var phoneno = /^\d{10}$/;
+        var mailformat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/
+        if(name ==""){
+        alert("Name cannot be empty");
+        return false;
+        }
+        if(contact ==""){
+        alert("Contact cannot be empty");
+        return false;
+        }
+        else if(!(contact.match(phoneno))){ alert("Invalid contact number");
+        return false;
+        }
+        if(email =="") {
+        alert("Email cannot be empty");
+        return false;
+        } else if(!(email.match(mailformat))){ 
+            alert("Invalid email id");
+        return false;
+        }
+        else
+        alert("Succesfully submitted");
+        }
+        </script>
+        </head>
+        <body style="text-align:center;">
+        <b>Form Validation</b><br/><br/>
+        <form name="frm" onsubmit="return validate()"">
+        <label for="name" class="label">Name:</label>
+        
+         <input type="text" id="name">
+        <br><br>
+        <label for="contact" class="label">Contact No:</label>
+        
+        <input type="text" id="contact">
+        <br><br>
+        <label for="mail" class="label">Email id:</label>
+        
+         <input type="email" id="mail">
+        <br><br>
+        <input type="submit" value="submit"> </b>
+        </form>   
+    </head>
+    <footer>
+        <p>&copy; 2025 HITS - jawan Institute of Technology and Science. All Rights Reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
+
+
+
+
