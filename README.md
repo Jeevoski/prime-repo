@@ -1,4 +1,4 @@
-Sure! Here’s a clean and beginner-friendly `README.md` for your **Form Validation Website** built using HTML, CSS, and JavaScript
+Sure! Here’s a clean and beginner-friendly `README.md` for your **Form Validation Website** built using HTML, CSS, and JavaScript:
 
 ---
 
